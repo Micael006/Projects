@@ -1,0 +1,8 @@
+#! /usr/bin/bash
+
+gcc factor1.c -g
+gcc factor2.c -g
+gcc factor3.c -g
+gcc factor4.c -g
+./a.out < tests.txt | diff input.txt - && echo "OK"
+gdb a.out
