@@ -1,0 +1,4 @@
+#! /usr/bin/bash
+
+gcc test.c
+./a.out < tests.txt | diff tests2.txt - && echo "OK"
