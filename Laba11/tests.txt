@@ -1,4 +1,0 @@
-bcdef cdefg defgh
-hello
-world
-Hi
