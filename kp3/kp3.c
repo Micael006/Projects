@@ -9,7 +9,7 @@ double m_eps()
 	return e;
 }
 double row(float x){
-	double result = -0.2, copy;
+	double result = -0.2;
 	for(int i = 2; i <= 100; i++){
 		if((pow(2,i-1)/pow(5,i)*pow(x,i-1)) > m_eps()){
 		result -= pow(2,i-1)/pow(5,i)*pow(x,i-1);
