@@ -1,0 +1,1 @@
+gcc menu.c add_delete/add_delete.c counting_cell/counting_cell.c output/output.c&&./a.out
