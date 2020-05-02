@@ -1,0 +1,2 @@
+gcc menu.c builder/build.c reduce/reduce.c cleaner/cleaner.c output/tree_output.c parse_exp/parse.c
+
