@@ -10,6 +10,7 @@ cell *ascencion(cell *tmp)
     {
         tmp = tmp->parent;
     }
+    return tmp;
 }
 
 void clean(cell *tmp)
