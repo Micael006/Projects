@@ -1,0 +1,6 @@
+gcc menu.c my_function/student_pc.c output/output.c re_builder/re_builder.c -o output.o
+gcc parse/enter.c writer/writer.c re_builder/re_builder.c -o enter.o - генерация исполняемых файлов
+ ./enter.o - это ввод базы данных(database на гите изначально заполнен 15-ью людьми, при попытке дописать он очистится)
+ ./output -f - это вывод бд
+ ./output -p - это вывод списка после обработки функцией
+ output - это бан
