@@ -11,7 +11,7 @@ cell *leaf(cell *tmp)
 }
 cell *create(t_table* table, int count_lines)//нужно дополнительно передать кол-во элементов
 {
-  cell *new_root = (cell *)malloc(sizeof(cell));//корень
+  cell *new_root = give_memory;//корень
   if(!new_root)
     printf("%s", "Out of memory");
   new_root->left = give_memory;//1-ый уровень игр
