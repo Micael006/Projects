@@ -6,5 +6,4 @@ cell *leaf(cell *);
 cell *create(t_table *, int);
 cell *destroy(cell *);
 
-//void delete (cell *, cell *, t_table *);
 #endif
