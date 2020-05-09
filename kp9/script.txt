@@ -1,0 +1,2 @@
+gcc prog.c add_delete/add_delete.c
+./a.out
