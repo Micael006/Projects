@@ -1,0 +1,2 @@
+gcc menu.c function/function.c
+./a.out
