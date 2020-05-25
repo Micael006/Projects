@@ -1,0 +1,6 @@
+gcc menu.c vector/vector.c -o prog
+./prog<in1 >out1
+./prog<in2 >out2
+./prog<in3 >out3
+./prog<in4 >out4
+echo "Выводы программы для 4-ёх тестовых примеров соответственно находятся в файлах out"
