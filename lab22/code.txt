@@ -1,0 +1,88 @@
+\documentclass[a5paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{soulutf8}
+\usepackage[russian]{babel}
+\usepackage[leqno]{amsmath}
+\usepackage{amssymb}
+\setcounter{page}{148}
+\usepackage[left=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+\headsep=10pt
+ 
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\itshape \thepage}
+\fancyhead[CE]{\itshape Глава 10}
+\fancyhead[CO]{\itshape Производные высшего порядка}
+ 
+\usepackage{pgfpages}
+ 
+\renewcommand{\headrulewidth}{0.1pt}
+\begin{document}
+    Весьма замечательно, что имеет место даже следующий факт:
+   
+    {\bfseries Теорема 185.} \itshape Существует функция $f(x)$, неограничен-\linebreakное  число раз дифференцируемая для всех $x$ и такая, что \linebreak
+    $$\lim_{m = \infty} \sum_{\nu=0}^{m} \frac{f^{(\nu)} (0)}{\nu!} h^\nu$$
+    существует для каждого $h$, но имеет значение $f(h)$ лишь \linebreak при $h = 0$.\upshape
+   
+    \so{Доказательство}. Пусть
+    \begin{equation*}
+    f(x) =
+    \begin{cases}
+    0 &\text{при \; \; x = 0,}\\
+    e^{-\frac{1}{x^2}} &\text{при \; \; $x \neq 0$.}
+    \end{cases}
+    \end{equation*}
+   
+    \noindent Я покажу сначала, что для каждого целого $\nu \geqslant 0$
+    \begin{equation}
+    \hspace{-8mm}f^{(\nu)}(x) & = &
+    \begin{cases}
+    0 &\text{при \; \; x = 0,}\\
+    P_{\nu}(\frac{1}{x})e^{-\frac{1}{x^2}} &\text{при \; \; $x \neq 0$,}
+    \end{cases}
+    \end{equation}
+    где $P_{\nu}(z)$ --- полином относительно $z$.
+   
+    Согласно примеру к теореме 160,\vspace{-2mm}
+    \begin{center}\hspace{-8mm} $e^b > b$ \; при \; $b > 0.$ \end{center}
+    Следовательно, при $x \neq 0$ для каждого целого $n \geqslant 0$ имеют\linebreak место неравенства
+    $$\hspace{-5mm}e^{\frac{1}{x^2}} = (e^{\frac{1}{(n+1)x^2}})^{n+1} > (\frac{1}{(n+1)x^2})^{n+1},$$
+    $$\hspace{-5mm}\frac{1}{|x|^n}e^{-\frac{1}{x^2}} < (n + 1)^{n+1}|x|^{n+2},$$
+    откуда
+    $$\hspace{-5mm}\lim_{x = 0} \frac{1}{x^n}e^{-\frac{1}{x^2}} = 0$$
+    для каждого целого $n\hspace{-2.5mm}\geqslant\hspace{-2.5mm}0$. Поэтому и для каждого поли-\linebreakнома $P(z)$ имеем
+    $$\hspace{-4mm}\lim_{x = 0} P(\frac{1}{x})e^{-\frac{1}{x^2}} = 0.\leqno (2)$$
+   
+    Формула (1) при $\nu = 0$ (c $P_{0}(z) = 1$) очевидна. Из $\nu$ сле-\linebreak дует $\nu + 1$, \; так как тогда, в силу равенства (2),
+    $$\hspace{-15mm}f^{(\nu + 1)}(0) = \lim_{x = 0} \frac{f^{(\nu)}(x)}{x} = \lim_{x = 0} \frac{1}{x}P_{\nu}(\frac{1}{x})e^{-\frac{1}{x^2}} = 0$$
+    (ведь $zP_{\nu}(z)$ также полином), а при $x \neq 0$
+    $$\hspace{-15mm}f^{\nu+1}(x) = (P_{\nu}(\frac{1}{x})e^{-\frac{1}{x^2}})'=$$
+    $$\hspace{-15mm} = P'_{\nu}(\frac{1}{x})(-\frac{1}{x^2})e^{-\frac{1}{x^2}} +
+    P_{\nu}(\frac{1}{x})\frac{2}{x^3}e^{-\frac{1}{x^2}} =
+    P_{\nu+1}(\frac{1}{x})e^{-\frac{1}{x^2}}.
+    $$
+   
+    Тем самым формула (1) доказана. Поэтому для всех $h$\linebreak и всех целых $m \geqslant 0$
+    $$\sum_{\nu=0}^{m} \frac{f^{(\nu)} (0)}{\nu!} h^\nu,$$
+    следовательно, для всех $h$
+    $$\hspace{-10mm}\lim_{m = \infty} \sum_{\nu=0}^{m} \frac{f^{(\nu)} (0)}{\nu!} h^\nu,$$
+    а
+    $$\hspace{-6mm}f(h)=e^{-\frac{1}{h^2}}$$
+    отлично от 0.
+   
+    \vspace*{2mm}{\bfseries Теорема 186.} \itshape Пусть $n \geqslant 2$ целое,
+    $$\hspace{-10mm}f^{(\nu)}(\xi) = 0 \text{\; \;при \; \;} 1 \leqslant \nu \leqslant n - 1,$$
+    $$\hspace{-10mm}f^{(n)}(\xi) \neq 0.$$
+   
+    \upshape{1)}\itshape Если $n$ четное и $f^{(n)}(\xi) > 0$, то $f(x)$ имеет в $\xi$ ми-\linebreakнимум.
+   
+    \upshape{2)}\itshape Если $n$ четное и $f^{(n)}(\xi) < 0$, то $f(x)$ имеет в $\xi$\linebreak максимум.
+   
+    \upshape{3)}\itshape Если $n$ нечетное и $f^{(n)}(\xi) > 0$, то $f(x)$ возра-\linebreakстает в $\xi$.
+   
+    \upshape{4)}\itshape Если $n$ нечетное и $f^{(n)}(\xi) < 0$, то $f(\xi)$ убывает в $\xi$,\linebreak
+   
+    \upshape
+   
+\end{document}
