@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: f6d91439563a0d742b4e2fbe9d21b8e4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_ViewDataDictionary: {instanceID: 0}
+  - cylinderMaterial: {fileID: 2100000, guid: 01e19988b03fabb4387d402c1e269efe, type: 2}
+  - supportRingMaterial: {fileID: 2100000, guid: 21d2a251557796d43891cdace8b1ee02, type: 2}
+  - supportBeamMaterial: {fileID: 2100000, guid: aa8eec4eef5ee3047a819d797af1fad6, type: 2}
+  - connectionXMaterial: {fileID: 2100000, guid: c067b2f0b25f7eb45be07e37c236be02, type: 2}
+  - connectionZMaterial: {fileID: 2100000, guid: 137dca70e840d3e40b0b03678a867e34, type: 2}
+  - generalRingMaterial: {fileID: 2100000, guid: e890657aafbdedb43995746a592674c7, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

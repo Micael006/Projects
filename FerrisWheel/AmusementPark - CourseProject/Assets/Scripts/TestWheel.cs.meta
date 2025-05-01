@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: ed4810d6b8f0462499d0fa5ef641dcfc
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_ViewDataDictionary: {instanceID: 0}
+  - cylinderMaterial: {fileID: 2100000, guid: 01e19988b03fabb4387d402c1e269efe, type: 2}
+  - connectionXMaterial: {fileID: 2100000, guid: c067b2f0b25f7eb45be07e37c236be02, type: 2}
+  - connectionZMaterial: {fileID: 2100000, guid: 137dca70e840d3e40b0b03678a867e34, type: 2}
+  - generalRingMaterial: {fileID: 2100000, guid: e890657aafbdedb43995746a592674c7, type: 2}
+  - supportRingMaterial: {fileID: 2100000, guid: 21d2a251557796d43891cdace8b1ee02, type: 2}
+  - supportBeamMaterial: {fileID: 2100000, guid: aa8eec4eef5ee3047a819d797af1fad6, type: 2}
+  - cabinMaterial: {fileID: 2100000, guid: 8d109fb4b7deff846968e92ee4a6871f, type: 2}
+  - cabinBenchMaterial: {fileID: 2100000, guid: f0fd75b1835ccf348a74f638d116bd50, type: 2}
+  - cabinWindowMaterial: {fileID: 2100000, guid: 2ac8b99fe44a65d449040f133eec0857, type: 2}
+  - platformMaterial: {fileID: 2100000, guid: fd2e5d182c0f7bd45b9fe1380956e3df, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
